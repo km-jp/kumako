@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>くまっこフェス</title>
+  <meta name="description" content="2026年7月25日（土）開催!アコースティックギター弾き語りのオンラインライブイベント「くまっこフェス」。ミラティブにて18:30より配信。東・よね・Sora・赤獅子・おれんじ・うめだま・かなめ・秋麗が出演。">
+  <meta name="keywords" content="くまっこフェス,くまっこ,弾き語り,アコースティック,ミラティブ,Mirrativ,オンラインライブ,2026">
+
+  <!-- OGP（SNSでシェアしたときのカード表示） -->
+  <meta property="og:title" content="くまっこフェス">
+  <meta property="og:description" content="2026年7月25日（土）18:30〜 ミラティブにてアコースティック弾き語りライブ配信イベント開催！">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="image/image1.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="くまっこフェス">
+  <meta name="twitter:description" content="2026年7月25日（土）18:30〜 ミラティブにてアコースティック弾き語りライブ配信イベント開催！">
+  <meta name="twitter:image" content="image/image1.png">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐻</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">🐻 くまっこフェス</div>
+  <button class="nav-hamburger" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#artists" class="nav-close">出演者</a></li>
+    <li><a href="#timetable" class="nav-close">タイムテーブル</a></li>
+    <li><a href="#access" class="nav-close">視聴方法</a></li>
+    <li><a href="#organizer" class="nav-close">主催</a></li>
+  </ul>
+</nav>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.nav-close').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
+
+<div class="hero">
+  <div class="hero-floaties">
+    <span class="floaty">♪</span><span class="floaty">🌸</span>
+    <span class="floaty">♫</span><span class="floaty">🌼</span>
+    <span class="floaty">♩</span><span class="floaty">🍀</span>
+    <span class="floaty">♪</span><span class="floaty">🌷</span>
+    <span class="floaty">♫</span><span class="floaty">🐇</span>
+  </div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">Acoustic Live on Mirrativ · 2026</span>
+
+    <h1 class="hero-title">
+      <span class="c1">く</span><span class="c2">ま</span><span class="c3">っ</span><span class="c4">こ</span><span class="c5">フ</span><span class="c6">ェ</span><span class="c7">ス</span>
+    </h1>
+
+    <p class="hero-desc">～ 木漏れ日を探して ～</p>
+
+    <p class="hero-date"><em>2026年6月27日（土）</em></p>
+
+    <a href="https://mirrativ.com" target="_blank" rel="noopener" class="hero-platform">📱 ミラティブ（Mirrativ）にてライブ配信</a>
+
+    <a href="#artists" class="hero-cta">出演者を見る</a>
+  </div>
+</div>
+
+<div class="divider">🌸 · · · 🌸 · · · 🌸</div>
+
+<section class="section" id="artists">
+  <span class="section-label">Line Up</span>
+  <h2 class="section-title">🎸 出演者</h2>
+  <div class="artists-grid">
+
+    <div class="artist-card">
+      <img src="image/image3.png" alt="東">
+      <div class="artist-card-body">
+        <h3>東(あずま)</h3>
+        <p>頑張って歌います🎶</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/102219431" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image4.png" alt="よね">
+      <div class="artist-card-body">
+        <h3>よね</h3>
+        <p>弾き語り大好きです</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/101156910" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image5.png" alt="Sora">
+      <div class="artist-card-body">
+        <h3>Sora☁🦈</h3>
+        <p>楽しみながら頑張って歌うので、温かい目で聴いてもらえたら嬉しいです☺️</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/8584113" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+          <a href="https://x.com/sora87415444?s=11&t=yZ4ReIHykWUh_qKAVTOBlQ" target="_blank" rel="noopener" class="artist-sns-btn">𝕏 @sora87415444</a>
+          <a href="https://www.instagram.com/sora__guitar?igsh=NDF0MnJ6eXdzMDRj&utm_source=qr" target="_blank" rel="noopener" class="artist-sns-btn">📸 Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image6.png" alt="赤獅子">
+      <div class="artist-card-body">
+        <h3>赤獅子(アカシシ)</h3>
+        <p>ナツくてアツいって言ってもらえるように頑張ります！</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/101083496" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image7.png" alt="おれんじ">
+      <div class="artist-card-body">
+        <h3>おれんじ</h3>
+        <p>ビビるぐらい自信あります</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/152184566" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image8.png" alt="うめだま">
+      <div class="artist-card-body">
+        <h3>うめだま(ウメダマ)</h3>
+        <p>弾き語り友達ください👉🏻👈🏻</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/136022039" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image9.png" alt="かなめ">
+      <div class="artist-card-body">
+        <h3>かなめ🐝🍯</h3>
+        <p>初めましての方も知ってる方もこんばんハニ〜🐝 楽しんでもらえると嬉しいです！！</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/1976051" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="artist-card">
+      <img src="image/image10.png" alt="秋麗">
+      <div class="artist-card-body">
+        <h3>秋麗(あきうらら)</h3>
+        <p>みなさんの「おかえり」に応えれるように 精一杯歌わせて頂きます🙇‍♀️</p>
+        <div class="artist-sns">
+          <a href="https://mirrativ.com/user/105536113" target="_blank" rel="noopener" class="artist-sns-btn">🔴 Mirrativ</a>
+          <a href="https://youtube.com/@akiulara_ssw?si=vYc-ff33bAd-PZQn" target="_blank" rel="noopener" class="artist-sns-btn">▶ YouTube</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider">🎵 · · · 🎵 · · · 🎵</div>
+
+<section class="section" id="timetable">
+  <span class="section-label">Timetable</span>
+  <h2 class="section-title">🕐 タイムテーブル</h2>
+  <div class="timetable">
+    <div class="tt-row">
+      <div class="tt-time">18:30</div>
+      <div class="tt-body">
+        <span class="tt-icon">🌅</span>
+        <div><div class="tt-name">東(あずま)</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">18:50</div>
+      <div class="tt-body">
+        <span class="tt-icon">🐱</span>
+        <div><div class="tt-name">よね</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">19:10</div>
+      <div class="tt-body">
+        <span class="tt-icon">☁️</span>
+        <div><div class="tt-name">Sora☁🦈</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">19:30</div>
+      <div class="tt-body">
+        <span class="tt-icon">🦁</span>
+        <div><div class="tt-name">赤獅子(アカシシ)</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">19:50</div>
+      <div class="tt-body">
+        <span class="tt-icon">🍊</span>
+        <div><div class="tt-name">おれんじ</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">20:10</div>
+      <div class="tt-body">
+        <span class="tt-icon">🍡</span>
+        <div><div class="tt-name">うめだま(ウメダマ)</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">20:30</div>
+      <div class="tt-body">
+        <span class="tt-icon">🐝</span>
+        <div><div class="tt-name">かなめ🐝🍯</div></div>
+      </div>
+    </div>
+    <div class="tt-row">
+      <div class="tt-time">20:50</div>
+      <div class="tt-body">
+        <span class="tt-icon">🍁</span>
+        <div><div class="tt-name">秋麗(あきうらら)</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">🍀 · · · 🍀 · · · 🍀</div>
+
+<section class="section" id="access">
+  <span class="section-label">How to Watch</span>
+  <h2 class="section-title">📱 視聴方法</h2>
+  <div class="access-steps">
+    <div class="access-step">
+      <div class="icon">📲</div>
+      <h3>アプリをダウンロード</h3>
+      <p>ミラティブ（Mirrativ）アプリをApp Store / Google Playからダウンロード</p>
+    </div>
+    <div class="access-step">
+      <div class="icon">🔍</div>
+      <h3>配信者を検索</h3>
+      <p>アプリ内で「くまっこ」を検索してフォローしよう！</p>
+    </div>
+    <div class="access-step">
+      <div class="icon">🎧</div>
+      <h3>当日参加</h3>
+      <p>配信開始時刻になったら通知が届きます。コメントも大歓迎🐻</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider">🌼 · · · 🌼 · · · 🌼</div>
+
+<section class="section" id="organizer">
+  <span class="section-label">Organizer</span>
+  <h2 class="section-title">🌿 主催者</h2>
+  <div class="organizer-box">
+    <h3>くまっこフェス 実行委員会</h3>
+    <p>
+      「くまっこフェス」は、弾き語りが好きな仲間たちが集まって開催する<br>
+      自主企画のオンラインライブイベントです。<br>
+      お問い合わせは各SNSのくまっこのDMまでお気軽にどうぞ🐻
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>🐻 くまっこフェス &copy; 2026 All Rights Reserved</p>
+</footer>
+
+<!-- くまっこ フッターマスコット -->
+<div class="mascot-popup" id="mascotPopup" aria-hidden="true">
+  <img src="image/image2.png" alt="くまっこ" class="mascot-img">
+</div>
+
+<script>
+(function() {
+  const mascot = document.getElementById('mascotPopup');
+  let shown = false;
+
+  function checkBottom() {
+    const scrollBottom = window.scrollY + window.innerHeight;
+    const pageHeight   = document.documentElement.scrollHeight;
+    if (!shown && scrollBottom >= pageHeight - 80) {
+      shown = true;
+      mascot.classList.add('visible');
+    } else if (shown && scrollBottom < pageHeight - 200) {
+      shown = false;
+      mascot.classList.remove('visible');
+    }
+  }
+
+  window.addEventListener('scroll', checkBottom, { passive: true });
+})();
+</script>
+
+</body>
+</html>
